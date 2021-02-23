@@ -11,9 +11,9 @@ public class CeilingFan {
 	@Command(name="speed", abbrev="s") 
 	public String toggleSpeed() {
 		int currentIndex = this.speedIndex;
-        int nextIndex = (currentIndex + 1) % SPEEDS.length;
-        speedIndex = nextIndex;
-        return showStatus();
+		int nextIndex = (currentIndex + 1) % SPEEDS.length;
+		speedIndex = nextIndex;
+		return showStatus();
 	}
 	
 	@Command(name="reverse", abbrev="r")
