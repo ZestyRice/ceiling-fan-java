@@ -4,9 +4,9 @@ import com.budhash.cliche.Command;
 
 public class CeilingFan {
 	
-	private Boolean isReversed = false;
+	private boolean isReversed = false;
 	private final int[] SPEEDS = {0, 1, 2, 3};
-	private Integer speedIndex = 0;
+	private int speedIndex = 0;
 	
 	@Command(name="speed", abbrev="s") 
 	public String toggleSpeed() {
@@ -27,11 +27,9 @@ public class CeilingFan {
 		System.exit(0);
 	}
 	
-
 	public String showStatus() {
-		return "Speed: " + speedIndex.toString() + " Reverse: " + isReversed.toString();
+		return "Speed: " + String.valueOf(speedIndex) + " Reverse: " + String.valueOf(isReversed);
 	}
-
 
 	public Integer getSpeedIndex() {
 		return speedIndex;
